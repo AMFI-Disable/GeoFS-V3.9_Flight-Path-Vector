@@ -151,7 +151,7 @@ window.howFar = 15; //                                THIS DETERMINES HOW FAR AW
 function main() {
     (function() {
         'use strict';
-        if (window.V39_NOTIF) window.V39_NOTIF.success("GeoFS-V3.9_Flight-Path-Vector v2.0.0 Loaded.");
+        if (window.V39_NOTIF) window.V39_NOTIF.success("GeoFS-V3.9_Flight-Path-Vector V2.0.0 Loaded.");
         const initialLoc = Cesium.Cartesian3.fromDegrees(geofs.camera.lla[1], geofs.camera.lla[0], (geofs.animation.values.groundElevationFeet/3.2808399));
 
         window.y = geofs.api.viewer.entities.add({
