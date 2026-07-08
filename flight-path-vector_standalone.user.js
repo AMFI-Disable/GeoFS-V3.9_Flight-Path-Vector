@@ -157,12 +157,12 @@ function main() {
         window.y = geofs.api.viewer.entities.add({
             position: initialLoc,
             billboard: {
-                image: "https://tylerbmusic.github.io/GPWS-files_geofs/FPV.png",
+                image: "https://tylerbmusic.github.io/GPWS-files_geofs/fpv.png",
                 scale: 0.03 * (1/geofs.api.renderingSettings.resolutionScale),
             },
         });
         if (geofs.api.renderingSettings.resolutionScale <= 0.6) {
-            window.y.billboard.image = 'https://tylerbmusic.github.io/GPWS-files_geofs/FPV_Lowres.png';
+            window.y.billboard.image = 'https://tylerbmusic.github.io/GPWS-files_geofs/fpv_lowres.png';
         }
         
         window.lastLoc = Cesium.Cartesian3.fromDegrees(geofs.camera.lla[1], geofs.camera.lla[0], geofs.camera.lla[2]);
