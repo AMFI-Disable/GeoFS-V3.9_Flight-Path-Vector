@@ -117,7 +117,7 @@
 // @copyright           2026, _init (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.0
+// @version             2.0.1
 // @author              _init
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/flight-path-vector.png
 // @match               https://www.geo-fs.com/geofs.php*
@@ -149,9 +149,9 @@ window.lastLoc = null;
 window.onload = setTimeout(waitForEntities, 10000);
 window.howFar = 15; //                                THIS DETERMINES HOW FAR AWAY THE DOT IS. IT IS A FACTOR, AND THE ACTUAL DISTANCE IS DIRECTLY RELATED TO THE TRUE AIRSPEED.
 function main() {
-    (function() {
-        'use strict';
-        if (window.V39_NOTIF) window.V39_NOTIF.success("GeoFS-V3.9_Flight-Path-Vector V2.0.0 Loaded.");
+    (() => {
+        
+        if (window.V39_NOTIF) window.V39_NOTIF.success("GeoFS-V3.9_Flight-Path-Vector V2.0.1 Loaded.");
         const initialLoc = Cesium.Cartesian3.fromDegrees(geofs.camera.lla[1], geofs.camera.lla[0], (geofs.animation.values.groundElevationFeet/3.2808399));
 
         window.y = geofs.api.viewer.entities.add({
@@ -271,7 +271,7 @@ function main() {
         // Update flight data display every 100ms
         window.fpvEnabled = true;
         setInterval(updateFlightDataDisplay, (geofs.debug.fps ? (1/(Number(geofs.debug.fps)))+5 : 100)); //The +5 gives a buffer and the : 100 is an attempt to prevent a huge lag spike on touchdown that I was encountering.
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', (event) => {
             if (event.key === 'l') {
                 window.fpvEnabled = !window.fpvEnabled;
                 if (window.y) {
