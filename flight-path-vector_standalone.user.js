@@ -51,57 +51,57 @@
 // @name:lo             GeoFS-V3.9_ເສັ້ນທາງການບິນ-Vector
 // @name:ur             GeoFS-V3.9_فلائٹ-پاتھ-ویکٹر
 
-// @description         Precision HUD Flight Path Vector (FPV) for GeoFS. Shows true velocity vector projection for improved landing and maneuver precision. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:vi      Vector đường bay HUD chính xác (FPV) cho GeoFS. Hiển thị phép chiếu vectơ vận tốc thực để cải thiện độ chính xác khi hạ cánh và cơ động. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-CN   GeoFS 的精确 HUD 飞行路径矢量 (FPV)。显示真实的速度矢量投影，以提高着陆和机动精度。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-TW   GeoFS 的精確 HUD 飛行路徑向量 (FPV)。顯示真實的速度向量投影，以提高著陸和機動精度。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ja      GeoFS 用の高精度 HUD 飛行経路ベクトル (FPV)。着陸と操縦の精度を向上させるための真の速度ベクトル投影を表示します。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ko      GeoFS용 정밀 HUD 비행 경로 벡터(FPV). 향상된 착륙 및 기동 정밀도를 위한 실제 속도 벡터 투영을 보여줍니다. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fr      Vecteur de trajectoire de vol HUD de précision (FPV) pour GeoFS. Affiche une projection vectorielle de vitesse réelle pour une meilleure précision d'atterrissage et de manœuvre. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:de      Präzisions-HUD-Flugpfadvektor (FPV) für GeoFS. Zeigt die Projektion des echten Geschwindigkeitsvektors für eine verbesserte Lande- und Manöverpräzision. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:es      Vector de ruta de vuelo (FPV) HUD de precisión para GeoFS. Muestra una proyección del vector de velocidad real para mejorar la precisión del aterrizaje y las maniobras. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-BR   Vetor de trajetória de voo HUD de precisão (FPV) para GeoFS. Mostra projeção vetorial de velocidade real para melhor precisão de pouso e manobra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-PT   Vetor de trajetória de voo HUD de precisão (FPV) para GeoFS. Mostra projeção vetorial de velocidade real para melhor precisão de aterragem e manobra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ru      Прецизионный вектор траектории полета HUD (FPV) для GeoFS. Показывает истинную проекцию вектора скорости для повышения точности приземления и маневрирования. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ar      ناقل مسار الطيران HUD الدقيق (FPV) لـ GeoFS. يُظهر إسقاطًا حقيقيًا لمتجه السرعة لتحسين دقة الهبوط والمناورة. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:tr      GeoFS için Hassas HUD Uçuş Yolu Vektörü (FPV). Geliştirilmiş iniş ve manevra hassasiyeti için gerçek hız vektör projeksiyonunu gösterir. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:id      Vektor Jalur Penerbangan HUD Presisi (FPV) untuk GeoFS. Menunjukkan proyeksi vektor kecepatan sebenarnya untuk meningkatkan presisi pendaratan dan manuver. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:th      เวกเตอร์เส้นทางการบิน HUD ที่แม่นยำ (FPV) สำหรับ GeoFS แสดงเส้นโครงเวกเตอร์ความเร็วจริงเพื่อการลงจอดและความแม่นยำในการเคลื่อนตัวที่ดีขึ้น © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pl      Precyzyjny wektor ścieżki lotu HUD (FPV) dla GeoFS. Pokazuje wektor rzeczywistej prędkości, co poprawia precyzję lądowania i manewrów. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nl      Precisie HUD Flight Path Vector (FPV) voor GeoFS. Toont ware snelheidsvectorprojectie voor verbeterde landings- en manoeuvreerprecisie. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:it      Precisione HUD Flight Path Vector (FPV) per GeoFS. Mostra la proiezione vettoriale della velocità reale per una migliore precisione di atterraggio e manovra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sv      Precision HUD Flight Path Vector (FPV) för GeoFS. Visar verklig hastighetsvektorprojektion för förbättrad landnings- och manöverprecision. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:da      Precision HUD Flight Path Vector (FPV) til GeoFS. Viser ægte hastighedsvektorprojektion for forbedret landings- og manøvrepræcision. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fi      Precision HUD Flight Path Vector (FPV) GeoFS:lle. Näyttää todellisen nopeusvektoriprojektion laskeutumisen ja ohjauksen tarkkuuden parantamiseksi. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nb      Precision HUD Flight Path Vector (FPV) for GeoFS. Viser ekte hastighetsvektorprojeksjon for forbedret landings- og manøverpresisjon. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:cs      Přesný vektor letové dráhy HUD (FPV) pro GeoFS. Ukazuje skutečnou vektorovou projekci rychlosti pro lepší přistání a přesnost manévrů. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hu      Precíziós HUD repülési útvonal vektor (FPV) a GeoFS-hez. Valódi sebességvektor-vetítést mutat a jobb leszállás és manőver pontosság érdekében. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ro      Precision HUD Flight Path Vector (FPV) pentru GeoFS. Afișează proiecția vectorului de viteză reală pentru o precizie îmbunătățită de aterizare și manevră. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:uk      Precision HUD Flight Path Vector (FPV) для GeoFS. Показує проекцію вектора справжньої швидкості для покращеної точності приземлення та маневру. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hi      जियोएफएस के लिए प्रिसिजन एचयूडी फ्लाइट पाथ वेक्टर (एफपीवी)। बेहतर लैंडिंग और पैंतरेबाज़ी परिशुद्धता के लिए वास्तविक वेग वेक्टर प्रक्षेपण दिखाता है। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bn      GeoFS-এর জন্য যথার্থ HUD ফ্লাইট পাথ ভেক্টর (FPV)। উন্নত অবতরণ এবং ম্যানুভার নির্ভুলতার জন্য সত্য বেগ ভেক্টর অভিক্ষেপ দেখায়। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fa      بردار مسیر پرواز دقیق HUD (FPV) برای GeoFS. پیش بینی بردار سرعت واقعی را برای بهبود فرود و دقت مانور نشان می دهد. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:he      Precision HUD Flight Path Vector (FPV) עבור GeoFS. מציג הקרנת וקטור מהירות אמיתית לשיפור דיוק הנחיתה והתמרון. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ms      Vektor Laluan Penerbangan HUD Ketepatan (FPV) untuk GeoFS. Menunjukkan unjuran vektor halaju sebenar untuk pendaratan dan ketepatan gerakan yang lebih baik. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fil     Precision HUD Flight Path Vector (FPV) para sa GeoFS. Nagpapakita ng tunay na velocity vector projection para sa pinahusay na landing at katumpakan ng maniobra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:el      Precision HUD Flight Path Vector (FPV) για GeoFS. Εμφανίζει διανυσματική προβολή πραγματικής ταχύτητας για βελτιωμένη ακρίβεια προσγείωσης και ελιγμών. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hr      Precizni HUD vektor putanje leta (FPV) za GeoFS. Prikazuje projekciju vektora prave brzine za poboljšano slijetanje i preciznost manevra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sk      Presný vektor letovej dráhy HUD (FPV) pre GeoFS. Zobrazuje skutočnú vektorovú projekciu rýchlosti pre lepšie pristátie a presnosť manévrov. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bg      Precision HUD Flight Path Vector (FPV) за GeoFS. Показва реална векторна проекция на скоростта за подобрено приземяване и прецизност на маневрирането. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sr      Прецизни ХУД вектор путање лета (ФПВ) за ГеоФС. Приказује пројекцију вектора праве брзине за побољшано слетање и прецизност маневара. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lt      Tikslus HUD skrydžio kelio vektorius (FPV), skirtas GeoFS. Rodo tikrojo greičio vektoriaus projekciją, kad būtų pagerintas tūpimas ir manevro tikslumas. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lv      Precīzijas HUD lidojuma ceļa vektors (FPV) GeoFS. Parāda patieso ātruma vektora projekciju, lai uzlabotu nosēšanās un manevra precizitāti. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:et      Täppis HUD lennutee vektor (FPV) GeoFS-i jaoks. Näitab tõelist kiirusvektori projektsiooni, et parandada maandumist ja manöövri täpsust. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sl      Precision HUD Flight Path Vector (FPV) za GeoFS. Prikazuje projekcijo vektorja prave hitrosti za izboljšano natančnost pri pristajanju in manevriranju. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ca      Vector de trajectòria de vol HUD de precisió (FPV) per a GeoFS. Mostra una projecció vectorial de velocitat real per millorar la precisió d'aterratge i maniobra. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:af      Precision HUD Flight Path Vector (FPV) vir GeoFS. Toon ware snelheidsvektorprojeksie vir verbeterde landings- en maneuverpresisie. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sw      Precision HUD Flight Path Vector (FPV) kwa GeoFS. Inaonyesha makadirio ya vekta ya kasi ya kweli kwa usahihi wa kutua na ujanja ulioboreshwa. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zu      I-Precision HUD Flight Path Vector (FPV) ye-GeoFS. Ibonisa ukuqagela kwevector yesivinini sangempela sokufika okuthuthukisiwe nokunemba kokuqondisa. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:mn      GeoFS-д зориулсан нарийвчлалын HUD нислэгийн замын вектор (FPV). Буух, маневр хийх нарийвчлалыг сайжруулахын тулд жинхэнэ хурдны вектор проекцийг харуулна. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:my      GeoFS အတွက် တိကျသော HUD ပျံသန်းမှုလမ်းကြောင်း (FPV)။ ပိုမိုကောင်းမွန်သော ဆင်းသက်ခြင်းနှင့် တိကျစွာ ပြေးလွှားခြင်းအတွက် စစ်မှန်သော အမြန်နှုန်း ကွက်ကွက်ကို ပြသသည်။ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:km      Precision HUD Flight Path Vector (FPV) សម្រាប់ GeoFS ។ បង្ហាញ​ការ​ព្យាករ​វ៉ិចទ័រ​ល្បឿន​ពិត​សម្រាប់​ការ​ធ្វើ​ឱ្យ​ប្រសើរ​ឡើង​នូវ​ការ​ចុះចត និង​ភាព​ជាក់លាក់​នៃ​ការ​ធ្វើ​សមយុទ្ធ។ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lo      Precision HUD Flight Path Vector (FPV) ສໍາລັບ GeoFS. ສະ​ແດງ​ການ​ຄາດ​ຄະ​ເນ vector ຄວາມ​ໄວ​ທີ່​ແທ້​ຈິງ​ສໍາ​ລັບ​ການ​ປັບ​ປຸງ​ການ​ລົງ​ຈອດ​ແລະ​ຄວາມ​ແມ່ນ​ຍໍາ maneuver​. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ur      جیو ایف ایس کے لیے پریسجن HUD فلائٹ پاتھ ویکٹر (FPV)۔ بہتر لینڈنگ اور پینتریبازی کی درستگی کے لیے حقیقی رفتار ویکٹر پروجیکشن دکھاتا ہے۔ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
+// @description         Precision HUD Flight Path Vector (FPV) for GeoFS. Shows true velocity vector projection for improved landing and maneuver precision. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:vi      Vector đường bay HUD chính xác (FPV) cho GeoFS. Hiển thị phép chiếu vectơ vận tốc thực để cải thiện độ chính xác khi hạ cánh và cơ động. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-CN   GeoFS 的精确 HUD 飞行路径矢量 (FPV)。显示真实的速度矢量投影，以提高着陆和机动精度。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-TW   GeoFS 的精確 HUD 飛行路徑向量 (FPV)。顯示真實的速度向量投影，以提高著陸和機動精度。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ja      GeoFS 用の高精度 HUD 飛行経路ベクトル (FPV)。着陸と操縦の精度を向上させるための真の速度ベクトル投影を表示します。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ko      GeoFS용 정밀 HUD 비행 경로 벡터(FPV). 향상된 착륙 및 기동 정밀도를 위한 실제 속도 벡터 투영을 보여줍니다. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fr      Vecteur de trajectoire de vol HUD de précision (FPV) pour GeoFS. Affiche une projection vectorielle de vitesse réelle pour une meilleure précision d'atterrissage et de manœuvre. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:de      Präzisions-HUD-Flugpfadvektor (FPV) für GeoFS. Zeigt die Projektion des echten Geschwindigkeitsvektors für eine verbesserte Lande- und Manöverpräzision. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:es      Vector de ruta de vuelo (FPV) HUD de precisión para GeoFS. Muestra una proyección del vector de velocidad real para mejorar la precisión del aterrizaje y las maniobras. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-BR   Vetor de trajetória de voo HUD de precisão (FPV) para GeoFS. Mostra projeção vetorial de velocidade real para melhor precisão de pouso e manobra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-PT   Vetor de trajetória de voo HUD de precisão (FPV) para GeoFS. Mostra projeção vetorial de velocidade real para melhor precisão de aterragem e manobra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ru      Прецизионный вектор траектории полета HUD (FPV) для GeoFS. Показывает истинную проекцию вектора скорости для повышения точности приземления и маневрирования. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ar      ناقل مسار الطيران HUD الدقيق (FPV) لـ GeoFS. يُظهر إسقاطًا حقيقيًا لمتجه السرعة لتحسين دقة الهبوط والمناورة. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:tr      GeoFS için Hassas HUD Uçuş Yolu Vektörü (FPV). Geliştirilmiş iniş ve manevra hassasiyeti için gerçek hız vektör projeksiyonunu gösterir. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:id      Vektor Jalur Penerbangan HUD Presisi (FPV) untuk GeoFS. Menunjukkan proyeksi vektor kecepatan sebenarnya untuk meningkatkan presisi pendaratan dan manuver. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:th      เวกเตอร์เส้นทางการบิน HUD ที่แม่นยำ (FPV) สำหรับ GeoFS แสดงเส้นโครงเวกเตอร์ความเร็วจริงเพื่อการลงจอดและความแม่นยำในการเคลื่อนตัวที่ดีขึ้น © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pl      Precyzyjny wektor ścieżki lotu HUD (FPV) dla GeoFS. Pokazuje wektor rzeczywistej prędkości, co poprawia precyzję lądowania i manewrów. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nl      Precisie HUD Flight Path Vector (FPV) voor GeoFS. Toont ware snelheidsvectorprojectie voor verbeterde landings- en manoeuvreerprecisie. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:it      Precisione HUD Flight Path Vector (FPV) per GeoFS. Mostra la proiezione vettoriale della velocità reale per una migliore precisione di atterraggio e manovra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sv      Precision HUD Flight Path Vector (FPV) för GeoFS. Visar verklig hastighetsvektorprojektion för förbättrad landnings- och manöverprecision. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:da      Precision HUD Flight Path Vector (FPV) til GeoFS. Viser ægte hastighedsvektorprojektion for forbedret landings- og manøvrepræcision. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fi      Precision HUD Flight Path Vector (FPV) GeoFS:lle. Näyttää todellisen nopeusvektoriprojektion laskeutumisen ja ohjauksen tarkkuuden parantamiseksi. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nb      Precision HUD Flight Path Vector (FPV) for GeoFS. Viser ekte hastighetsvektorprojeksjon for forbedret landings- og manøverpresisjon. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:cs      Přesný vektor letové dráhy HUD (FPV) pro GeoFS. Ukazuje skutečnou vektorovou projekci rychlosti pro lepší přistání a přesnost manévrů. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hu      Precíziós HUD repülési útvonal vektor (FPV) a GeoFS-hez. Valódi sebességvektor-vetítést mutat a jobb leszállás és manőver pontosság érdekében. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ro      Precision HUD Flight Path Vector (FPV) pentru GeoFS. Afișează proiecția vectorului de viteză reală pentru o precizie îmbunătățită de aterizare și manevră. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:uk      Precision HUD Flight Path Vector (FPV) для GeoFS. Показує проекцію вектора справжньої швидкості для покращеної точності приземлення та маневру. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hi      जियोएफएस के लिए प्रिसिजन एचयूडी फ्लाइट पाथ वेक्टर (एफपीवी)। बेहतर लैंडिंग और पैंतरेबाज़ी परिशुद्धता के लिए वास्तविक वेग वेक्टर प्रक्षेपण दिखाता है। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bn      GeoFS-এর জন্য যথার্থ HUD ফ্লাইট পাথ ভেক্টর (FPV)। উন্নত অবতরণ এবং ম্যানুভার নির্ভুলতার জন্য সত্য বেগ ভেক্টর অভিক্ষেপ দেখায়। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fa      بردار مسیر پرواز دقیق HUD (FPV) برای GeoFS. پیش بینی بردار سرعت واقعی را برای بهبود فرود و دقت مانور نشان می دهد. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:he      Precision HUD Flight Path Vector (FPV) עבור GeoFS. מציג הקרנת וקטור מהירות אמיתית לשיפור דיוק הנחיתה והתמרון. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ms      Vektor Laluan Penerbangan HUD Ketepatan (FPV) untuk GeoFS. Menunjukkan unjuran vektor halaju sebenar untuk pendaratan dan ketepatan gerakan yang lebih baik. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fil     Precision HUD Flight Path Vector (FPV) para sa GeoFS. Nagpapakita ng tunay na velocity vector projection para sa pinahusay na landing at katumpakan ng maniobra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:el      Precision HUD Flight Path Vector (FPV) για GeoFS. Εμφανίζει διανυσματική προβολή πραγματικής ταχύτητας για βελτιωμένη ακρίβεια προσγείωσης και ελιγμών. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hr      Precizni HUD vektor putanje leta (FPV) za GeoFS. Prikazuje projekciju vektora prave brzine za poboljšano slijetanje i preciznost manevra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sk      Presný vektor letovej dráhy HUD (FPV) pre GeoFS. Zobrazuje skutočnú vektorovú projekciu rýchlosti pre lepšie pristátie a presnosť manévrov. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bg      Precision HUD Flight Path Vector (FPV) за GeoFS. Показва реална векторна проекция на скоростта за подобрено приземяване и прецизност на маневрирането. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sr      Прецизни ХУД вектор путање лета (ФПВ) за ГеоФС. Приказује пројекцију вектора праве брзине за побољшано слетање и прецизност маневара. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lt      Tikslus HUD skrydžio kelio vektorius (FPV), skirtas GeoFS. Rodo tikrojo greičio vektoriaus projekciją, kad būtų pagerintas tūpimas ir manevro tikslumas. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lv      Precīzijas HUD lidojuma ceļa vektors (FPV) GeoFS. Parāda patieso ātruma vektora projekciju, lai uzlabotu nosēšanās un manevra precizitāti. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:et      Täppis HUD lennutee vektor (FPV) GeoFS-i jaoks. Näitab tõelist kiirusvektori projektsiooni, et parandada maandumist ja manöövri täpsust. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sl      Precision HUD Flight Path Vector (FPV) za GeoFS. Prikazuje projekcijo vektorja prave hitrosti za izboljšano natančnost pri pristajanju in manevriranju. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ca      Vector de trajectòria de vol HUD de precisió (FPV) per a GeoFS. Mostra una projecció vectorial de velocitat real per millorar la precisió d'aterratge i maniobra. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:af      Precision HUD Flight Path Vector (FPV) vir GeoFS. Toon ware snelheidsvektorprojeksie vir verbeterde landings- en maneuverpresisie. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sw      Precision HUD Flight Path Vector (FPV) kwa GeoFS. Inaonyesha makadirio ya vekta ya kasi ya kweli kwa usahihi wa kutua na ujanja ulioboreshwa. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zu      I-Precision HUD Flight Path Vector (FPV) ye-GeoFS. Ibonisa ukuqagela kwevector yesivinini sangempela sokufika okuthuthukisiwe nokunemba kokuqondisa. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:mn      GeoFS-д зориулсан нарийвчлалын HUD нислэгийн замын вектор (FPV). Буух, маневр хийх нарийвчлалыг сайжруулахын тулд жинхэнэ хурдны вектор проекцийг харуулна. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:my      GeoFS အတွက် တိကျသော HUD ပျံသန်းမှုလမ်းကြောင်း (FPV)။ ပိုမိုကောင်းမွန်သော ဆင်းသက်ခြင်းနှင့် တိကျစွာ ပြေးလွှားခြင်းအတွက် စစ်မှန်သော အမြန်နှုန်း ကွက်ကွက်ကို ပြသသည်။ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:km      Precision HUD Flight Path Vector (FPV) សម្រាប់ GeoFS ។ បង្ហាញ​ការ​ព្យាករ​វ៉ិចទ័រ​ល្បឿន​ពិត​សម្រាប់​ការ​ធ្វើ​ឱ្យ​ប្រសើរ​ឡើង​នូវ​ការ​ចុះចត និង​ភាព​ជាក់លាក់​នៃ​ការ​ធ្វើ​សមយុទ្ធ។ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lo      Precision HUD Flight Path Vector (FPV) ສໍາລັບ GeoFS. ສະ​ແດງ​ການ​ຄາດ​ຄະ​ເນ vector ຄວາມ​ໄວ​ທີ່​ແທ້​ຈິງ​ສໍາ​ລັບ​ການ​ປັບ​ປຸງ​ການ​ລົງ​ຈອດ​ແລະ​ຄວາມ​ແມ່ນ​ຍໍາ maneuver​. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ur      جیو ایف ایس کے لیے پریسجن HUD فلائٹ پاتھ ویکٹر (FPV)۔ بہتر لینڈنگ اور پینتریبازی کی درستگی کے لیے حقیقی رفتار ویکٹر پروجیکشن دکھاتا ہے۔ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 
 // @require             https://update.greasyfork.org/scripts/581510/code.js
 // @require             https://update.greasyfork.org/scripts/581511/code.js
@@ -114,11 +114,11 @@
 // @compatible          safari
 // @compatible          brave
 // @compatible          opera
-// @copyright           2026, _init (https://greasyfork.org/users/1594049)
+// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
 // @version             2.0.1
-// @author              _init
+// @author              AMFI-Disable
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/flight-path-vector.png
 // @match               https://www.geo-fs.com/geofs.php*
 // @match               https://*.geo-fs.com/geofs.php*
