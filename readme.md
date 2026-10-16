@@ -6,6 +6,18 @@
 
 The 3D Flight Path Vector reticle for **GeoFS-V3.9**. Projects flight deck trajectory onto the Cesium canvas, correcting for drift and wind shear.
 
+---
+
+## ⚖️ Educational & Fair-Play Disclaimer
+
+> [!CAUTION]
+> **IMPORTANT NOTICE & DISCLAIMER**:
+> This codebase is provided strictly for educational, research, and testing purposes in authorized environments.
+> Using automated assistance or unauthorized scripts in violation of platform terms of service or anti-cheat policies may lead to account penalties.
+> The developers and contributors accept no responsibility or liability for misuse of this software.
+
+---
+
 ## ✨ Features
 
 - **🎯 3D Cartesian Projection**: Calculates the true 3D spatial velocity vector of the pilot's eye point in Earth-Centered Earth-Fixed (ECEF) coordinates, projecting it dynamically onto the 3D Cesium globe.
