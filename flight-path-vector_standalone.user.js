@@ -126,10 +126,27 @@
 // @license             MIT
 // ==/UserScript==
 
+/**
+ * Runtime Version Guard: GeoFS-V3.9 Suite Compatibility
+ * Ensures this module only executes on GeoFS v3.9 or earlier, and gracefully
+ * deactivates if GeoFS v4.0+ is detected.
+ */
+function isUnsupportedGeoFS() {
+    const raw = window.geofs?.version;
+    if (raw === undefined || raw === null) return false;
+    const clean = typeof raw === 'string' ? raw.replace(/^[^\d.]*/, '') : raw;
+    const num = typeof clean === 'number' ? clean : parseFloat(clean);
+    return !isNaN(num) && num >= 4.0;
+}
+
 function cF(x, y, z) {
     return { x, y, z };
 }
 function waitForEntities() {
+    if (isUnsupportedGeoFS()) {
+        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        return;
+    }
     try {
         if (geofs.api) {
             // Entities are already defined, no need to wait
@@ -149,6 +166,10 @@ window.lastLoc = null;
 window.onload = setTimeout(waitForEntities, 10000);
 window.howFar = 15; //                                THIS DETERMINES HOW FAR AWAY THE DOT IS. IT IS A FACTOR, AND THE ACTUAL DISTANCE IS DIRECTLY RELATED TO THE TRUE AIRSPEED.
 function main() {
+    if (isUnsupportedGeoFS()) {
+        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        return;
+    }
     (() => {
         
         if (window.V39_NOTIF) window.V39_NOTIF.success("GeoFS-V3.9_Flight-Path-Vector V2.0.1 Loaded.");
