@@ -50,7 +50,6 @@
 // @name:km             GeoFS-V3.9_វ៉ិចទ័រផ្លូវហោះហើរ
 // @name:lo             GeoFS-V3.9_ເສັ້ນທາງການບິນ-Vector
 // @name:ur             GeoFS-V3.9_فلائٹ-پاتھ-ویکٹر
-
 // @description         Precision HUD Flight Path Vector (FPV) for GeoFS. Shows true velocity vector projection for improved landing and maneuver precision. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:vi      Vector đường bay HUD chính xác (FPV) cho GeoFS. Hiển thị phép chiếu vectơ vận tốc thực để cải thiện độ chính xác khi hạ cánh và cơ động. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:zh-CN   GeoFS 的精确 HUD 飞行路径矢量 (FPV)。显示真实的速度矢量投影，以提高着陆和机动精度。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
@@ -103,40 +102,46 @@
 // @description:lo      Precision HUD Flight Path Vector (FPV) ສໍາລັບ GeoFS. ສະ​ແດງ​ການ​ຄາດ​ຄະ​ເນ vector ຄວາມ​ໄວ​ທີ່​ແທ້​ຈິງ​ສໍາ​ລັບ​ການ​ປັບ​ປຸງ​ການ​ລົງ​ຈອດ​ແລະ​ຄວາມ​ແມ່ນ​ຍໍາ maneuver​. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:ur      جیو ایف ایس کے لیے پریسجن HUD فلائٹ پاتھ ویکٹر (FPV)۔ بہتر لینڈنگ اور پینتریبازی کی درستگی کے لیے حقیقی رفتار ویکٹر پروجیکشن دکھاتا ہے۔ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 
+// @namespace           https://greasyfork.org/users/1594049
+// @version             3.9.0
+// @author              AMFI-Disable
+// @homepageURL         https://sites.google.com/view/geofs-v39-ecosystem/home
+// @icon                https://www.geo-fs.com/images/icons/favicon.ico
+// @match               https://www.geo-fs.com/geofs.php*
 // @require             https://update.greasyfork.org/scripts/581510/code.js
 // @require             https://update.greasyfork.org/scripts/581511/code.js
-
-// @homepageURL         https://sites.google.com/view/geofs-v39-ecosystem/home
-// @connect             greasyfork.org
+// @grant               none
+// @license             MIT
+// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
 // @compatible          safari
 // @compatible          brave
 // @compatible          opera
-// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
-
-// @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.3
-// @author              AMFI-Disable
-// @icon                https://www.geo-fs.com/images/icons/favicon.ico
-// @match               https://www.geo-fs.com/geofs.php*
-// @match               https://*.geo-fs.com/geofs.php*
-// @grant               none
-// @license             MIT
 // ==/UserScript==
+
+// Wait for GeoFS to report its version before executing any module code.
+// Unknown, older, and newer versions never activate this V3.9 release.
+(function waitForGeoFSVersion() {
+    const version = window.geofs?.version;
+    if (version === undefined || version === null || version === '') {
+        setTimeout(waitForGeoFSVersion, 250);
+        return;
+    }
+    if (!/^(?:v)?3\.9(?:\.\d+)*$/i.test(String(version).trim())) {
+        console.warn('[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS ' + version + ' is not V3.9.');
+        return;
+    }
+
 
 /**
  * Runtime Version Guard: GeoFS-V3.9 Suite Compatibility
- * Ensures this module only executes on GeoFS v3.9 or earlier, and gracefully
- * deactivates if GeoFS v4.0+ is detected.
+ * Allows this module to execute only when GeoFS reports version 3.9.
  */
 function isUnsupportedGeoFS() {
     const raw = window.geofs?.version;
-    if (raw === undefined || raw === null) return false;
-    const clean = typeof raw === 'string' ? raw.replace(/^[^\d.]*/, '') : raw;
-    const num = typeof clean === 'number' ? clean : parseFloat(clean);
-    return !isNaN(num) && num >= 4.0;
+        return !/^(?:v)?3\.9(?:\.\d+)*$/i.test(String(raw ?? '').trim());
 }
 
 function cF(x, y, z) {
@@ -144,7 +149,7 @@ function cF(x, y, z) {
 }
 function waitForEntities() {
     if (isUnsupportedGeoFS()) {
-        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9).");
         return;
     }
     try {
@@ -167,7 +172,7 @@ window.onload = setTimeout(waitForEntities, 10000);
 window.howFar = 15; //                                THIS DETERMINES HOW FAR AWAY THE DOT IS. IT IS A FACTOR, AND THE ACTUAL DISTANCE IS DIRECTLY RELATED TO THE TRUE AIRSPEED.
 function main() {
     if (isUnsupportedGeoFS()) {
-        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        console.warn("[GeoFS-V3.9_Flight-Path-Vector] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9).");
         return;
     }
     (() => {
@@ -302,3 +307,5 @@ function main() {
         });
     })();
 }
+
+})();

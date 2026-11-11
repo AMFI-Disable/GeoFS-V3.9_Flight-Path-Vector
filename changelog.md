@@ -4,6 +4,32 @@ All notable changes, mathematical updates, and version releases for GeoFS-V3.9 F
 
 ---
 
+## [3.9.0] - Unified Metadata
+
+### Changed
+
+- Standardize the userscript metadata and version across the V3.9 ecosystem.
+- Match only the GeoFS main site and activate only when it reports V3.9.
+
+---
+
+## [Unreleased]
+
+### Changed
+
+- **Favicon Metadata**: Switched userscript icon reference to the official GeoFS favicon.
+
+---
+
+## [2.0.4] - GeoFS V3.9 Compatibility
+
+### Changed
+
+- Start only after GeoFS reports V3.9; remain inactive on other or unrecognized versions.
+- Update compatibility documentation and version metadata.
+
+---
+
 ## [2.0.1] - Telemetry Precision And Reticle Stabilization
 
 ### Added
